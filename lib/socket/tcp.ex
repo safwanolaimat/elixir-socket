@@ -115,7 +115,7 @@ defmodule Socket.TCP do
         opt, acc when not is_tuple(opt) ->
           acc ++ [opt]
 
-        _ ->
+        _opt, acc ->
           acc
       end)
 
